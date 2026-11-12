@@ -13,7 +13,7 @@
 <link rel="icon" href="img/logo-mark.png">
 <link rel="apple-touch-icon" href="img/logo-mark.png">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<link rel="preload" as="image" href="img/ibex.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="img/ibex-hd.jpg" fetchpriority="high">
 <title>Matan Sharon Card</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Heebo:wght@300;400;500;800&display=swap">
 <style>
@@ -49,7 +49,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .photo{position:absolute;inset:0;z-index:-2;overflow:hidden;background:#D8CDBF url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QBARXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAGKADAAQAAAABAAAADwAAAAD/7QA4UGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAAA4QklNBCUAAAAAABDUHYzZjwCyBOmACZjs+EJ+/+IB2ElDQ19QUk9GSUxFAAEBAAAByAAAAAAEMAAAbW50clJHQiBYWVogB+AAAQABAAAAAAAAYWNzcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJZGVzYwAAAPAAAAAkclhZWgAAARQAAAAUZ1hZWgAAASgAAAAUYlhZWgAAATwAAAAUd3RwdAAAAVAAAAAUclRSQwAAAWQAAAAoZ1RSQwAAAWQAAAAoYlRSQwAAAWQAAAAoY3BydAAAAYwAAAA8bWx1YwAAAAAAAAABAAAADGVuVVMAAAAIAAAAHABzAFIARwBCWFlaIAAAAAAAAG+iAAA49QAAA5BYWVogAAAAAAAAYpkAALeFAAAY2lhZWiAAAAAAAAAkoAAAD4QAALbPWFlaIAAAAAAAAPbWAAEAAAAA0y1wYXJhAAAAAAAEAAAAAmZmAADypwAADVkAABPQAAAKWwAAAAAAAAAAbWx1YwAAAAAAAAABAAAADGVuVVMAAAAgAAAAHABHAG8AbwBnAGwAZQAgAEkAbgBjAC4AIAAyADAAMQA2/8AAEQgADwAYAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/bAEMABgYGBgYGCgYGCg4KCgoOEg4ODg4SFxISEhISFxwXFxcXFxccHBwcHBwcHCIiIiIiIicnJycnLCwsLCwsLCwsLP/bAEMBBwcHCwoLEwoKEy4fGh8uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLv/dAAQAAv/aAAwDAQACEQMRAD8AoxWUDqZD5WBzncT3x2rbgszavjz/ADGEixlTgKNwyMk5OBXjumanc2dwJYGIzyQeVYHsRXdt4nilijfaURgdxUAkN6DkVm5ylozXkS1R091ciSAyKRtVcjHPJbaAB69Tj6Vi+fN6Sf8AfutAGFoRNDMwWVVK8cg+v1qLEv8Az9S/p/hSjJLSwOLep//Z) 0% 0%/auto max(100%,820px) no-repeat}
 [dir=rtl] .photo{background-position:12% 0%}
 .photo img{position:absolute;top:0;left:0;width:100%;height:max(100%,820px);object-fit:cover;object-position:0% 50%;display:block;transform-origin:35% 70%;
-  animation:fade .9s var(--ease) both,drift 40s ease-in-out .9s infinite alternate}
+  animation:fadein .9s var(--ease) both}
 [dir=rtl] .photo img{object-position:12% 50%;transform-origin:35% 70%}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
   background:radial-gradient(120% 55% at 0% 22%,rgba(240,238,246,.42),rgba(240,238,246,0) 70%)}
@@ -150,6 +150,7 @@ footer .cap{color:var(--fg-3);font-size:9.5px}
 .toast.cap{color:var(--bg)}
 
 @keyframes drift{from{transform:scale(1)}to{transform:scale(1.06)}}
+@keyframes fadein{from{opacity:.001}to{opacity:1}}
 @keyframes fade{from{opacity:.001;transform:scale(1.04)}to{opacity:1;transform:scale(1)}}
 @keyframes rise{from{opacity:.001;transform:translateY(14px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -158,7 +159,7 @@ footer .cap{color:var(--fg-3);font-size:9.5px}
 <body>
 <main class="card" id="card">
  <section class="hero">
-  <div class="photo"><img src="img/ibex.jpg" alt="Nubian ibex resting above desert hills" width="1400" height="875" fetchpriority="high" decoding="async"></div>
+  <div class="photo"><img src="img/ibex-hd.jpg" alt="Nubian ibex resting above desert hills" width="2000" height="1250" fetchpriority="high" decoding="async"></div>
   <header class="head in">
     <div class="mark"><img src="img/logo-mark.png" alt="" width="22" height="23"><span class="cap">MW Photo Tours</span></div>
     <div class="lang" role="group" aria-label="Language">
